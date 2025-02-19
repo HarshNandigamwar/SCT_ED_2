@@ -1,4 +1,4 @@
-Stopwatch Project :-
+⭕ Stopwatch Project :-
 
 This is a simple yet functional Stopwatch built using HTML, CSS, and JavaScript. This project is part of my Frontend Development Internship at #SkillcraftTechnology. The stopwatch allows users to start, pause, reset, and record lap times, making it a useful tool for measuring and recording time intervals accurately.
 
