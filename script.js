@@ -1,3 +1,4 @@
+alert("Use in desktop mode for a better experience. ")
 var ms, s, h;
 var timer;
 var display = document.querySelector(".timer-Display");
