@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="theme-color" content="#00ff00" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task_2 StopWatch</title>
+    <title>StopWatch</title>
     <link rel="icon" href="./logo/stop watch.jpeg" type="image/jpeg" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      .timer-Display {
+        padding: 40px 0;
+      }
+      .laps {
+        margin-top: 10px;
+      }
+      .buttons {
+        margin: 60px auto 0 auto;
+      }
+      .buttons button {
+        padding: 10px 20px;
+      }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="timer-Display"><!--00:00:00:00--></div>
-      <ul class="laps"></ul>
-      <div class="buttons">
-        <button id="startTime" onclick="start()">Start</button>
-        <button id="pauseTime" onclick="pause()">Pause</button>
-        <button id="resetTime" onclick="reset()">Reset</button>
-        <button id="resetTimer" onclick="restart()">Restart</button>
-        <button id="lap" onclick="lap()">lap</button>
-        <button id="resetLap" onclick="resetLap()">Reset Laps</button>
+  <body class="bg-black">
+    <div
+      class="container bg-[#1a1a1a] w-[80%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[3px] border-[solid] border-[#1aff00] rounded-xl md:w-[30%] lg:w-[40%]"
+    >
+      <div
+        class="timer-Display text-5xl font-[Roboto] text-[#1aff00] flex justify-center items-center"
+      >
+        <!--00:00:00:00-->
+      </div>
+
+      <ul class="laps text-center text-[#1aff00] text-4xl"></ul>
+
+      <div class="buttons w-[85%] grid grid-cols-2 gap-[20px]">
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="startTime"
+          onclick="start()"
+        >
+          Start
+        </button>
+
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="pauseTime"
+          onclick="pause()"
+        >
+          Pause
+        </button>
+
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="resetTime"
+          onclick="reset()"
+        >
+          Reset Time
+        </button>
+
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="resetTimer"
+          onclick="restart()"
+        >
+          Restar
+        </button>
+
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="lap"
+          onclick="lap()"
+        >
+          lap
+        </button>
+
+        <button
+          class="bg-white border-none text-xl font-medium border rounded-[5px] cursor-pointer hover:bg-[#141313] hover:text-[#1aff00] hover:border-[3px] hover:border-solid hover:border-[#1aff00]"
+          id="resetLap"
+          onclick="resetLap()"
+        >
+          Reset Laps
+        </button>
+      </div>
+
+      <div class="text-white text-center" style="padding-top: 30px">
+        <a
+          class="hover:text-[#1aff00]"
+          href="https://github.com/HarshNandigamwar"
+          ><i
+            title="About Developer"
+            class="fa-solid fa-circle-info text-white text-1xl"
+          ></i>
+          About Dev</a
+        >
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

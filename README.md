@@ -2,8 +2,12 @@
 
 ## ⭕ Stopwatch Project
 
-This is a simple yet functional Stopwatch built using HTML, CSS3, and JavaScript. This project is part of my Frontend Development Internship at #SkillcraftTechnology. The stopwatch allows users to start, pause, reset, and record lap times, making it a useful tool for measuring and recording time intervals accurately.
-
+This is a simple yet functional Stopwatch built using HTML, Tailwind-CSS, and JavaScript. This project is part of my Frontend Development Internship at #SkillcraftTechnology. The stopwatch allows users to start, pause, reset, and record lap times, making it a useful tool for measuring and recording time intervals accurately.
+- 
+![img1](./logo/img%201.png)
+- 
+![img1](./logo/img%202.png)
+- 
 ## ✨ Features
 
 *   **Start & Stop:** Easily start and pause the stopwatch.
@@ -15,7 +19,7 @@ This is a simple yet functional Stopwatch built using HTML, CSS3, and JavaScript
 ## 💻 Technologies Used
 
 *   **HTML:** Structure of the stopwatch.
-*   **CSS3:** Styling for an appealing user interface.
+*   **Tailwind-CSS:** Styling for an appealing user interface.
 *   **JavaScript:** Implements stopwatch functionality, including time tracking, start/stop, reset, and lap recording.
 
 ## 📃 How to Use
